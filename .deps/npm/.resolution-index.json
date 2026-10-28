@@ -1,0 +1,10 @@
+{
+  "SimpleStorage.sol": {
+    "__sources__": {
+      "SimpleStorage.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity ^0.8.34;\r\n\r\ncontract SimpleStorage {\r\n    // uint256 favoriteNumber;\r\n    struct Person{\r\n        uint256 myFavoriteNumber;\r\n        string name;\r\n    }\r\n\r\n    Person[] public listOfPeople;\r\n    mapping(string => uint256) public nameToFavoriteNumber;\r\n\r\n    function store(uint256 _favoriteNumber, string memory _name) public {\r\n        // listOfPeople.push(Person(_favoriteNumber, _name));\r\n        nameToFavoriteNumber[_name] = _favoriteNumber;\r\n    }\r\n\r\n\r\n    // function retrive() public view returns(uint256) {\r\n    //     return favoriteNumber;\r\n    // }\r\n}",
+        "file": "SimpleStorage.sol"
+      }
+    }
+  }
+}
