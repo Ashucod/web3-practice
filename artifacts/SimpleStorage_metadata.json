@@ -8,6 +8,24 @@
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
@@ -17,7 +35,7 @@
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "myFavoriteNumber",
+						"name": "favoriteNumber",
 						"type": "uint256"
 					},
 					{
@@ -49,16 +67,24 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
 						"name": "_favoriteNumber",
 						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
 					}
 				],
 				"name": "store",
@@ -80,7 +106,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"SimpleStorage.sol": "SimpleStorage"
+			"StorageFactory.sol": "SimpleStorage"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -94,12 +120,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"SimpleStorage.sol": {
-			"keccak256": "0xdd221a6ea3172ff41d5b586969fcef25eda5ff0bb7f66ab97c1d83dbbc46f4f5",
+		"StorageFactory.sol": {
+			"keccak256": "0xbcf3d3623ae8976773c9f04e007c7f0656a11b589e6a656704cdfd63c657f8b2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4a861ee2de7265d3807bf406615c7fc4e26c1971c05c19bc340d7ef192dc7e95",
-				"dweb:/ipfs/QmPZX2hombue7pAPoFCA4P6VTfr5B7gE1JCP5Ai7JWPtoC"
+				"bzz-raw://d73d3e6346a7e4281d8e709ce5e6d71a5947e2ec8dc3101df0f2e7ebc037d9be",
+				"dweb:/ipfs/QmY7HpwFgvD4Y1BTpe7qbBuX9WvJvwNX93egbcCksNKAni"
 			]
 		}
 	},
